@@ -16,7 +16,7 @@ android {
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
-    // agregar viewBinding a Module y clic en Sync
+    // agregar viewBinding a Module y clic en Sync para sincronizar gradle Module
     buildFeatures {
         viewBinding = true
     }
