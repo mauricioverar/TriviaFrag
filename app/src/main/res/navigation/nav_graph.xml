@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/nav_graph">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/inicio">
 
+    <fragment
+        android:id="@+id/inicio"
+        android:name="com.example.triviafrag.Inicio"
+        android:label="fragment_inicio"
+        tools:layout="@layout/fragment_inicio" >
+        <action
+            android:id="@+id/action_inicio_to_pregunta"
+            app:destination="@id/pregunta" />
+    </fragment>
+    <fragment
+        android:id="@+id/pregunta"
+        android:name="com.example.triviafrag.Pregunta"
+        android:label="fragment_pregunta"
+        tools:layout="@layout/fragment_pregunta" />
 </navigation>

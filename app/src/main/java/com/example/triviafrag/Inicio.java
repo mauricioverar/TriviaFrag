@@ -3,6 +3,7 @@ package com.example.triviafrag;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.navigation.Navigation;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -41,7 +42,7 @@ public class Inicio extends Fragment {
             @Override
             public void onClick(View v) {
                 Toast.makeText(getContext(), "Presiona", Toast.LENGTH_LONG).show();
-                //Navigation.findNavController(v).navigate(R.id.fragmentUno);
+                Navigation.findNavController(v).navigate(R.id.pregunta);
             }
         });
         return vista;
