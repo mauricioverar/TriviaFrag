@@ -8,6 +8,7 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+// 1 insertar fragment en linear en activity xml
 public class MainActivity extends AppCompatActivity {
 
     @Override
